@@ -1,0 +1,12 @@
+version: '2.4'
+
+services:
+  postgres-demo:
+    image: postgres:12
+    container_name: demo_quadrant_equation
+    environment:
+      POSTGRES_DB: "quadrant_equation"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "137qwerty"
+    ports:
+      - "5432:5432"
